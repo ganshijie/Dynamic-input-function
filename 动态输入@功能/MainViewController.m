@@ -34,6 +34,13 @@
 #pragma mark -初始化-
 -(void)initUI
 {
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 70, ScreenWidth, 20)];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.text = @"请在下面输入框输入@";
+    label.backgroundColor = [UIColor redColor];
+    [self.view addSubview:label];
+    
+    
     _location = 0;
     _inputTextView = [[YYTextView alloc] init];
     [self.view addSubview:_inputTextView];
